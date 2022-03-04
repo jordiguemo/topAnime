@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TopAnime</string>
+    <string name="anime_list_fragment_label">Anime List Fragment</string>
+    <string name="anime_detail_fragment_label">Anime Detail Fragment Label</string>
+</resources>

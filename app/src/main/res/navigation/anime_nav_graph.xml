@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/animeListFragment"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animeNavGraph">
+
+    <fragment
+        android:id="@+id/animeListFragment"
+        android:name="com.jordiguemo.topanime.presentation.list.AnimeListFragment"
+        android:label="@string/anime_list_fragment_label"
+        tools:layout="@layout/fragment_anime_list">
+        <action
+            android:id="@+id/toAnimeDetailFragment"
+            app:destination="@id/animeDetailFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/animeDetailFragment"
+        android:name="com.jordiguemo.topanime.presentation.detail.AnimeDetailFragment"
+        android:label="@string/anime_detail_fragment_label"
+        tools:layout="@layout/fragment_anime_detail">
+        <argument
+            android:name="animeId"
+            app:argType="string"/>
+    </fragment>
+
+</navigation>

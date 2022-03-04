@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FontWeightBold" parent="@android:style/TextAppearance">
+        <item name="fontWeight">700</item>
+    </style>
+    <style name="FontWeightExtraBold" parent="@android:style/TextAppearance">
+        <item name="fontWeight">900</item>
+    </style>
+</resources>
